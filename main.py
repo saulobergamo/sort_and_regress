@@ -1,3 +1,11 @@
+import sys
+import os
+
+# Obtém o diretório raiz do projeto
+root_dir = os.path.dirname(os.path.abspath(__file__))
+# Adiciona o diretório raiz ao sys.path
+sys.path.append(root_dir)
+
 from sort.tree_sort import tree_sort
 
 

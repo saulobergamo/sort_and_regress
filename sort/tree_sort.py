@@ -14,8 +14,8 @@ def tree_sort():
         labeled_target = [row[-1] for row in labeled_data]
 
     # Carrega os dados sem label
-    with open(blind_testing, "r") as blind_testing:
-        unlabeled_data = [list(map(float, row)) for row in csv.reader(blind_testing, delimiter=",")]
+    with open(blind_testing, "r") as blind_testing_file:
+        unlabeled_data = [list(map(float, row)) for row in csv.reader(blind_testing_file, delimiter=",")]
         data = [row for row in unlabeled_data]
         unlabeled_data = [row[1:] for row in data]
         validate = [row[-1] for row in data]
