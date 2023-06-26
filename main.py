@@ -7,11 +7,12 @@ root_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(root_dir)
 
 from sort.tree_sort import tree_sort
+from regression.neural_regression import neural_regressor
 
 
 opt = -1
 while opt != 0:
-    print("\nEscolha o algoritmo\n1 - Tree sort\n2 - Fuzzy\n3 - Neural classifier\n0 - Sair")
+    print("\nEscolha o algoritmo\n1 - Tree sort\n2 - Neural regresion\n3 - Fuzzy\n0 - Sair")
     try:
         opt = int(input())
     except ValueError:
@@ -19,6 +20,8 @@ while opt != 0:
         continue
     if(opt == 1):
         tree_sort()
+    elif(opt == 2):
+        neural_regressor()
     elif(opt == 0):
         print("\nFinalizado!")
     else:

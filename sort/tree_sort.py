@@ -1,7 +1,7 @@
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 import csv
 import matplotlib.pyplot as plt
-from util.load_data import training, blind_testing
+from util.load_data import training, blind_testing, tree_sort_result
 
 def tree_sort():
     
@@ -32,7 +32,7 @@ def tree_sort():
     # Imprime os resultados
     print(predicted_target[:300])
 
-    with open("data/resultado_classificação_gravidade_teste_cego.txt", "w") as f:
+    with open(tree_sort_result, "w") as f:
         # Iterar sobre os valores e escrevê-los no arquivo
         for value in predicted_target:
             value = int(value)
