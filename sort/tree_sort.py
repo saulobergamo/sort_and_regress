@@ -32,7 +32,7 @@ def tree_sort():
     # Imprime os resultados
     print(predicted_target[:300])
 
-    with open("classificação_gravidade_teste_cego.txt", "w") as f:
+    with open("data/resultado_classificação_gravidade_teste_cego.txt", "w") as f:
         # Iterar sobre os valores e escrevê-los no arquivo
         for value in predicted_target:
             value = int(value)
