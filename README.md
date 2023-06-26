@@ -10,6 +10,12 @@ Universidade Tecnológica Federal do Paraná  - UTFPR -  Sistemas Inteligentes (
     csv<br>
     pandas<br>
 
+<font color="red">Execução</font>
+
+    Tenha python3 e pip instalado.
+    pip install <dependência pendente>
+    python3 main.py
+
 
 ___
 <br>
