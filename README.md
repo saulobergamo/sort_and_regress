@@ -13,7 +13,7 @@ Universidade Tecnológica Federal do Paraná  - UTFPR -  Sistemas Inteligentes (
 
 <font color="red">Execução</font>
 
-    Tenha python3 e pip install.
+    Tenha python3 e pip instalado.
     pip install <dependência pendente>
     python3 main.py
 
