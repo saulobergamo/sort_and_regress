@@ -9,6 +9,7 @@ Universidade Tecnológica Federal do Paraná  - UTFPR -  Sistemas Inteligentes (
     sklearn<br>
     csv<br>
     pandas<br>
+    skfuzzy<br>
 
 <font color="red">Execução</font>
 
