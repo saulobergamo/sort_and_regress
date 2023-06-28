@@ -1,14 +1,14 @@
 import pandas as pd
 from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import StandardScaler
-from util.load_data import training, blind_testing, neural_regression_result
+from util.load_data import trainning, blind_testing, neural_regression_result
 
 import csv
 
 def neural_regressor():
 
     # Carrega os dados com label
-    with open(training, "r") as training_file:
+    with open(trainning, "r") as training_file:
         labeled_data = [list(map(float, row)) for row in csv.reader(training_file, delimiter=",")]
         labeled_features = [row[3:-2] for row in labeled_data]
         labeled_target = [row[-2] for row in labeled_data]

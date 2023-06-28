@@ -1,14 +1,14 @@
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 import csv
 import matplotlib.pyplot as plt
-from util.load_data import training, blind_testing, tree_sort_result
+from util.load_data import trainning, blind_testing, tree_sort_result
 
 def tree_sort():
     
     labeled_data = None
 
     # Carrega os dados com label
-    with open(training, "r") as training_file:
+    with open(trainning, "r") as training_file:
         labeled_data = [list(map(float, row)) for row in csv.reader(training_file, delimiter=",")]
         labeled_features = [row[3:-2] for row in labeled_data]
         labeled_target = [row[-1] for row in labeled_data]
